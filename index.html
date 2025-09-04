@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Личное Портфолио</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo"><img src="../static/image/avatar.jpg" alt="">Илья</div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./about.html">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="./projects.html">Проекты</a></li>
+                </ul>
+                <button id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Дизайнер, верстальшик собственноручных работ и игроман.</h1>
+                <p>Меня зовут Илья, являюсь Frontend-разработчиком, живущий в Москве. Выполняю работу в качестве фприлансера.</p>
+                <div class="gallery-social">
+                    <a href="https://t.me/liquiorra"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/liquiorra"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.figma.com/files/team/1304942326353079046/drafts?fuid=1291343981155121087"><i class="fa-brands fa-figma"></i></a>
+                </div>
+                <a href="#projects" class="cta-button">Посмотреть проекты</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-image">
+                <div class="gallery-item">
+                    <img src="../static/image/program-1.jpg" alt="Изображение 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/image/program-2.jpg" alt="Изображение 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/image/program-3.jpg" alt="Изображение 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/image/program-4.jpg" alt="Изображение 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/image/program-5.jpg" alt="Изображение 5">
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="skills" class="skills">
+            <h2>Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Django</div>
+                <div class="skill-item">Дизайн</div>
+            </div>
+        </section>
+
+        <section id="projects-card" class="projects-card">
+            <h2>Проекты</h2>
+            <div class="project-card-grid">
+                <div class="project-card-item">
+                    <img src="../static/image/project-2.png" alt="Проект 1">
+                    <h3>Reu Shop</h3>
+                    <p>Онлайн-магазин</p>
+                    <h6>2024 — 2025</h6>
+                </div>
+                <div class="project-card-item">
+                    <img src="../static/image/project-1.png" alt="Проект 2">
+                    <h3>Клуб 4 коней</h3>
+                    <p>Лендинг</p>
+                    <h6>2025 — 2025</h6>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Контакты</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Илья. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
