@@ -13,16 +13,21 @@
         <header>
             <nav>
                 <div class="logo"><img src="./avatar.jpg" alt="">Илья</div>
+                <input type="checkbox" id="menu-checkbox">
                 <ul class="nav-links">
+                    <li class="close-menu"><button class="close-button"><i class="fas fa-times"></i></button></li>
                     <li><a href="./index.html">Главная</a></li>
                     <li><a href="./about.html">Обо мне</a></li>
                     <li><a href="#skills">Навыки</a></li>
                     <li><a href="./projects.html">Проекты</a></li>
                 </ul>
-                <button id="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </button>
+                <div class="nav-buttons">
+                    <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+                    <button id="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </nav>
         </header>
 

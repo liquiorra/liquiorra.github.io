@@ -25,3 +25,29 @@ const themeToggle = document.getElementById('theme-toggle');
                 moonIcon.style.display = 'inline';
             }
         });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuCheckbox = document.getElementById('menu-checkbox');
+    const closeButton = document.querySelector('.close-button');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    document.querySelector('nav').appendChild(overlay);
+
+    // Close menu when clicking the close button
+    closeButton.addEventListener('click', () => {
+        menuCheckbox.checked = false;
+    });
+
+    // Close menu when clicking outside
+    overlay.addEventListener('click', () => {
+        menuCheckbox.checked = false;
+    });
+
+    // Close menu when clicking a navigation link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuCheckbox.checked = false;
+        });
+    });
+});
